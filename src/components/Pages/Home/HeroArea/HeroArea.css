@@ -1,0 +1,6 @@
+.bg-hero {
+    background-image: url("../../../../assets/images/bannerbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
