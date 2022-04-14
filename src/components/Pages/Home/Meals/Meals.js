@@ -10,11 +10,11 @@ import Meal from "./Meal/Meal";
 const Meals = () => {
     const meals = [
         { name: "BreakFast1", id: 1, img: breakFast1 },
-        { name: "BreakFast2", id: 1, img: breakFast2 },
-        { name: "BreakFast3", id: 1, img: breakFast3 },
-        { name: "BreakFast4", id: 1, img: breakFast4 },
-        { name: "BreakFast5", id: 1, img: breakFast5 },
-        { name: "BreakFast6", id: 1, img: breakFast6 },
+        { name: "BreakFast2", id: 2, img: breakFast2 },
+        { name: "BreakFast3", id: 3, img: breakFast3 },
+        { name: "BreakFast4", id: 4, img: breakFast4 },
+        { name: "BreakFast5", id: 5, img: breakFast5 },
+        { name: "BreakFast6", id: 6, img: breakFast6 },
     ];
 
     return (

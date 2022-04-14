@@ -6,6 +6,8 @@ import SignUp from "./components/Login/SignUp/SignUp";
 import Checkout from "./components/Pages/Checkout/Checkout";
 import Error from "./components/Pages/Error/Error";
 import Footer from "./components/Shared/Footer/Footer";
+import About from "./components/Pages/About/About";
+import RequireAuth from "./components/Pages/RequireAuth/RequireAuth";
 
 function App() {
     return (
@@ -14,8 +16,16 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home></Home>}></Route>
                 <Route path="/login" element={<Login></Login>}></Route>
-                <Route path="/checkout" element={<Checkout></Checkout>}></Route>
+                <Route
+                    path="/checkout"
+                    element={
+                        <RequireAuth>
+                            <Checkout></Checkout>
+                        </RequireAuth>
+                    }
+                ></Route>
                 <Route path="/signup" element={<SignUp></SignUp>}></Route>
+                <Route path="/about" element={<About></About>}></Route>
                 <Route path="*" element={<Error></Error>}></Route>
             </Routes>
             <Footer></Footer>
